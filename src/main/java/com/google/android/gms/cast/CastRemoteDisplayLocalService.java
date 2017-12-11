@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
+import android.view.Display;
+import android.view.View;
 
 import com.google.android.gms.common.api.Status;
 
@@ -48,5 +50,11 @@ public class CastRemoteDisplayLocalService extends Service {
             }
         }
     }
+
+
+    public void onCreatePresentation(Display display){}
+
+    public void onDismissPresentation(){}
+
 
 }
